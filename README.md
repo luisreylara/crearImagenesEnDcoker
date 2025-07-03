@@ -7,8 +7,6 @@ docker build -t app-mia  .
 docker build -t app-mia  . -f Dockerfile01
 ```
 
-
-
 ## Ingresamos al S.O. del contenedor creado
 ```
 docker run -it app-mia sh

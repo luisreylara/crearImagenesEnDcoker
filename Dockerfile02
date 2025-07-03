@@ -1,0 +1,8 @@
+FROM node:20.5.0-alpine3.18
+
+# se establece un directorio de trabajo dentro del contenedor
+WORKDIR /app/
+# crear la imágen e ingresar al S.O. del contenedor y notará que aparecerá en el directorio /app
+
+
+
