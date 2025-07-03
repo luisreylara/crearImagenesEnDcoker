@@ -12,6 +12,8 @@ ENV API=http://upjr.edu.mx
 EXPOSE 5173
 
 
-
+# ingresar al S.O. alpine y ejecutar 
+# ls -l
+# notar que todos los archivos pertenecen al usuario y grupo react:react 
 
 
