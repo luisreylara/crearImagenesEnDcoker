@@ -4,6 +4,6 @@ FROM node:20.5.0-alpine3.18
 WORKDIR /app/
 # crear la imágen e ingresar al S.O. del contenedor y notará que aparecerá en el directorio /app
 
-# Copia todos los archivos que se encuentren en la carpeta al WORKDIR
+# Copia todos los archivos de la carpeta actual al WORKDIR
 COPY . /app/
 

@@ -1,0 +1,38 @@
+FROM node:20.5.0-alpine3.18
+
+# se establece un directorio de trabajo dentro del contenedor
+WORKDIR /app/
+# crear la imágen e ingresar al S.O. del contenedor y notará que aparecerá en el directorio /app
+
+# Copia todos los archivos de la carpeta actual al WORKDIR
+# COPY . /app/
+COPY . .
+
+# Copia archivo del link  al WORKDIR
+# ADD http://www.algo.com/archivos .
+
+# Copia un archivo zip , lo descomprime y lo manda a WORKDIR
+#ADD archivo.zip .
+
+# cuando se crea el arhivo .dockerignore dentro de la carpeta actual, funciona igual que el .gitignore y el contenido del archivo ignora los archivos y no los sube a /app/
+
+
+# ejecutar comandos dentro del S.O.
+RUN apk update
+RUN apk add cmatrix
+
+
+# establecer variables dentro del S.O.
+ENV API=http://upjr.edu.mx
+# verificar la variable con el comando printenv dentro del S.O.
+
+# el comando CMD se ejecuta después que se haya creado el contenedor
+
+# CMD [ "npm","run","dev" ]
+
+# a diferencia del comando RUN que se ejecuta cuando se crea la imagen
+
+
+# el comando EXPOSE le indica al usuario el puerto que se va a utilizar para que este informado
+EXPOSE 5173
+

@@ -11,5 +11,14 @@ COPY . .
 # Copia archivo del link  al WORKDIR
 # ADD http://www.algo.com/archivos .
 
+# Copia un archivo zip , lo descomprime y lo manda a WORKDIR
+#ADD archivo.zip .
+
+# cuando se crea el arhivo .dockerignore dentro de la carpeta actual, funciona igual que el .gitignore y el contenido del archivo ignora los archivos y no los sube a /app/
+
+
+# ejecutar comandos dentro del S.O.
+RUN apk update
+RUN apk add cmatrix
 
 
