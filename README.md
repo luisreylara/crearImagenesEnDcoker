@@ -17,4 +17,6 @@ docker build -t app-mia:1.0.0  . -f Dockerfile01
 docker run -it app-mia sh
 ```
 ## Ingresamos al S.O. del contenedor creado con un TAG especifico
+```
 docker run -it app-mia:1.0.0 sh
+```
