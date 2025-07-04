@@ -29,6 +29,7 @@ ENV API=http://upjr.edu.mx
 # el comando CMD se ejecuta después que se haya creado el contenedor
 
 # CMD [ "npm","run","dev" ]
+# CMD [ "py","main.py" ]
 
 # a diferencia del comando RUN que se ejecuta cuando se crea la imagen
 
